@@ -31,6 +31,8 @@
 // }
 
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
 export async function connect() {
 	const dbURI = process.env.MONGODB_URL;
